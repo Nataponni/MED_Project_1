@@ -1,0 +1,212 @@
+body {    
+    background-color: rgb(255, 213, 173);
+    color: #e46408;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 110vh; /* Устанавливает высоту body на 100% высоты окна браузера */
+}
+
+/* Сброс стилей ссылок на уровне всей страницы */
+a {
+    text-decoration:  none; /* Убираем подчеркивание у всех ссылок */
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #0d00ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    align-items: center; /* Вертикальное выравнивание по центру */
+    justify-content: flex-end; /* Горизонтальное выравнивание по центру */
+    padding: 16px;
+}
+header img {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    margin-right: 20px; /* Отступ между логотипом и текстом */
+}
+
+header h2 {
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+}
+main {
+    margin-top: 80px;
+}
+
+/* Текст выше изображений */
+.intro {
+    text-align: center; /* Центрирование текста */
+    margin: 16px 0; /* Отступы сверху и снизу */
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 18px;
+}
+
+/* Основной контейнер для выравнивания */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет перенос элементов на новые строки */
+    justify-content: center; /* Выровнять по центру */
+    gap: 20px; /* Расстояние между элементами */
+}
+
+
+
+/* Контейнер для каждого элемента */
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px; /* Ограничить ширину каждого элемента */
+    flex: 0 0 auto; /* Предотвращает сжатие элементов */
+    margin-right: 10px; /* Отступ между элементами */
+}
+
+.gallery-item-items {
+    display: flex;
+    justify-content: flex-start;
+    width: 500px;
+    gap: 100px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+}
+
+/* Изображения */
+.gallery-item img,
+.box {
+    width: 100%; /* Ширина изображения */
+    height: 100%; /* Высота изображения */
+    object-fit: cover; /* Заполнение области с обрезкой */
+    border-radius: 10px; /* Опционально: закруглённые углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень вокруг изображения */
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover,
+.box:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+/* Кнопки под изображениями */
+.gallery-item .button,
+.box-text .button {
+    margin-top: 10px; /* Расстояние между изображением и кнопкой */
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #f46d33;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень вокруг кнопки */
+    transition: all 0.3s ease; /* Анимация при наведении */
+}
+
+.gallery-item .button:hover,
+.box-text .button:hover {
+    background-color: #00b303;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Более глубокая тень */
+}
+.gallery-item .button:active,
+.box-text .button:active {
+    transform: scale(0.95); /* Лёгкое уменьшение */
+    background-color: #008a02; /* Тёмный зелёный цвет */
+}
+.bestellung-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bestellung-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 260px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+}
+input.check {
+    width: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.item label {
+    flex: 1;
+    margin-right: 8px;
+}
+
+.item input {
+    width: 80px;
+    padding: 5px;
+    text-align: center;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}

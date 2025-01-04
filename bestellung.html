@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestellung</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/HTL Bulme.png" alt="BULME Logo">
+        <h2>HTL BULME<br>Food & Drink<br>Kantine</h2>
+    </header>
+    <main>
+        <h1 class="intro">Ihre Bestellung</h1>
+        <div class="bestellung-form">
+            <form action="form.php" method="post">
+                
+
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefon: </label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Adresse: </label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="payment_method">Zahlungsmethode: </label>
+                    <select id="payment_method" name="payment_method" required>
+                        <option value="credit_card">Kreditkarte</option>
+                        <option value="cash">Barzahlung</option>
+                        <option value="online">Online-Zahlung</option>
+                    </select>
+                </div>
+
+                <!-- Первый товара -->
+                <div class="item" data-price="2.70">
+                    <label for="item1_quantity">Ramen-Suppe</label>
+                    <input type="number" id="item1_quantity" class="quantity" name="item1_quantity" min="0" step="1" value="0">
+                </div>
+
+                <!-- Второй товар -->
+                <div class="item" data-price="3.00">
+                    <label for="item2_quantity">Honighuhn mit Bohnen</label>
+                    <input type="number" id="item2_quantity" class="quantity" name="item2_quantity" min="0" step="1" value="0">
+                </div>
+
+                <div class="item" data-price="2.50">
+                    <label for="item3_quantity">Bahn Mi mit Gurke</label>
+                    <input type="number" id="item3_quantity" class="quantity" name="item3_quantity" min="0" step="1" value="0">
+                </div>
+
+                <div class="item" data-price="2.00">
+                    <label for="item4_quantity">Nacho-Salat mit Krabben</label>
+                    <input type="number" id="item4_quantity" class="quantity" name="item4_quantity" min="0" step="1" value="0">
+                </div>
+
+                <div class="item" data-price="2.90">
+                    <label for="item4_quantity">Lavash-Röllchen</label>
+                    <input type="number" id="item4_quantity" class="quantity" name="item4_quantity" min="0" step="1" value="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="total">Gesamtsumme:</label>
+                    <input type="text" id="total" name="total" readonly> <!--можно только читать, но не редактировать --> 
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input class="check" type="checkbox" name="order_confirmation" required>
+                        Ich bestätige die Richtigkeit der eingegebenen Daten
+                    </label>
+                </div>
+
+                <button type="submit">Bestellung aufgeben</button>
+            </form>
+
+            <a href="hauptspeise.html">Zurück zur Produktauswahl</a>
+        </div>
+    </main>
+</body>
+</html>
