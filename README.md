@@ -11,7 +11,7 @@ Dies ist eine Website für die Kantine der HTL BULME Gösting-Graz, die Informat
    
 2. Wechseln Sie in das Projektverzeichnis:
    
-  cd Repository_Name
+   cd Repository_Name
   
 3. Öffnen Sie die Datei index.html in Ihrem Browser.
    
@@ -24,9 +24,8 @@ Klicken Sie auf "Bestellung", um zum Bestellformular zu gelangen.
 Screenshots:
 Dies ist die Startseite der Website mit den verschiedenen Kategorien von Gerichten.
 
-Autoren:
-
-Ihr Name – Nataliia Hrytsun
+Autor:
+Nataliia Hrytsun
 
 Zusätzliche Informationen:
 
