@@ -27,4 +27,4 @@ Nataliia Hrytsun
 
 **Zusätzliche Informationen:**
 
-Die Website ist verfügbar unter: https://sandbox.bulme.at/~nataliia.hrytsun/MED_Projekt_1/start.html
+Die Website ist verfügbar unter: https://sandbox.bulme.at/~nataliia.hrytsun/MED_Projekt_1/index.html
