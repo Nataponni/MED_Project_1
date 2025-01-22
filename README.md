@@ -9,7 +9,7 @@ Dies ist eine Website für die Kantine der HTL BULME Gösting-Graz, die Informat
    ```bash
    git clone https://github.com/Nataponni/MED_Project_1.git
    
-2. Öffnen Sie **`start.html`** in Ihrem Browser.
+2. Öffnen Sie **`index.html`** in Ihrem Browser.
    
 **Technologien:**
    HTML: Struktur des Projekts.
@@ -27,4 +27,4 @@ Nataliia Hrytsun
 
 **Zusätzliche Informationen:**
 
-Die Website ist verfügbar unter: https://sandbox.bulme.at/~nataliia.hrytsun/MED_Projekt_1/index.html
+Die Website ist verfügbar unter: https://sandbox.bulme.at/~nataliia.hrytsun/index.html
